@@ -4,80 +4,106 @@
 ![CSS](https://img.shields.io/badge/CSS3-Styling-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow)
 
-A responsive personal portfolio website built to showcase my projects, technical skills, and developer profile.
+A personal portfolio website built to showcase my projects, technical skills, and developer profile.
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-This project is a **personal portfolio website** that highlights my work as a **Computer Science student and aspiring software developer**.
+The **Personal Portfolio App** is a simple responsive website that presents my work as a **Computer Science student and aspiring software developer**.
 
-The website presents information about:
+The website contains:
 
-- My projects
-- Technical skills
-- Developer profile
-- Contact information
+- A developer introduction
+- A showcase of projects
+- Basic information about my skills
+- Contact details
 
-It serves as an **online portfolio that can be shared with recruiters and collaborators**.
+It acts as an **online portfolio that can be shared with recruiters and collaborators**.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-✔ Responsive design for desktop and mobile  
-✔ About section introducing the developer  
+✔ Clean and minimal UI  
+✔ Responsive layout  
+✔ About / introduction section  
 ✔ Projects showcase section  
 ✔ Contact information section  
-✔ Clean and minimal user interface  
 
 ---
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 
-- 🌐 HTML5 – Page structure  
+- 🌐 HTML5 – Website structure  
 - 🎨 CSS3 – Styling and layout  
-- ⚡ JavaScript – Interactive elements  
+- ⚡ JavaScript – Interactivity and dynamic behavior  
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-personal-portfolio-app  
-│  
-├── index.html  
-├── style.css  
-├── script.js  
-└── assets/  
+```
+personal-portfolio-app
+│
+├── .gitattributes
+├── .hintrc
+├── index.html
+├── script.js
+├── style.css
+└── README.md
+```
 
 ---
 
-## ▶️ How to Run the Project
+# ⚙️ How the Website Works
 
-1. Clone the repository
+1. The **HTML file** defines the structure of the webpage.
+2. **CSS** is used to style and design the layout.
+3. **JavaScript** adds interactive behavior to the webpage.
 
+---
+
+# ▶️ How to Run the Project
+
+1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/ekbalshah-dev/personal-portfolio-app.git
+```
 
-2. Navigate to the project folder
+2️⃣ Navigate to the project folder
 
-3. Open **index.html** in your browser
+```bash
+cd personal-portfolio-app
+```
+
+3️⃣ Open the website
+
+Open the file:
+
+```
+index.html
+```
+
+in your browser.
 
 ---
 
-## 🎯 Purpose of the Project
+# 🎯 Purpose of the Project
 
-The purpose of this project is to create a **personal website that presents my development work and skills**.
+This project was created to:
 
-It demonstrates:
-
-- Frontend development skills  
-- Web layout design  
-- Project presentation  
+- Showcase my web development projects
+- Practice frontend development
+- Build a professional developer portfolio
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Ekbal Shah**  
-🎓 B.Sc Computer Science Student  
-📍 Bengaluru, India
+B.Sc Computer Science Student  
+Bengaluru, India  
+
+GitHub: https://github.com/ekbalshah-dev
