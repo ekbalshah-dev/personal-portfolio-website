@@ -8,6 +8,13 @@ A personal portfolio website built to showcase my projects, technical skills, an
 
 ---
 
+## 🚀 Live Demo
+
+View the project here:  
+https://ekbalshah-dev.github.io/personal-portfolio-website/
+
+---
+
 # 📖 Overview
 
 The **Personal Portfolio App** is a simple responsive website that presents my work as a **Computer Science student and aspiring software developer**.
