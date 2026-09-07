@@ -1,183 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Ekbal Shah | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Ekbal Shah | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <!-- Top gradient background layer -->
-  <div class="bg-gradient" aria-hidden="true"></div>
+  <body>
+    <!-- Top gradient background layer -->
+    <div class="bg-gradient" aria-hidden="true"></div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" aria-label="Primary">
-    <a class="brand" href="#top" aria-label="Go to top">
-      <span class="brand-dot" aria-hidden="true"></span>
-      <span>Ekbal</span>
-    </a>
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ekbal</span>
+      </a>
 
-    <div class="nav-actions">
-      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
-        🌙
-      </button>
+      <div class="nav-actions">
+        <button
+          class="icon-btn"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        >
+          🌙
+        </button>
 
-      <button
-        class="icon-btn menu-btn"
-        id="menu-btn"
-        aria-label="Open menu"
-        aria-haspopup="true"
-        aria-expanded="false"
-        aria-controls="mobile-drawer"
-        title="Menu"
-      >
-        ☰
-      </button>
-    </div>
-
-    <!-- Desktop nav -->
-    <div class="nav-links" id="desktop-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Mobile drawer + backdrop -->
-  <div class="backdrop" id="backdrop" hidden></div>
-
-  <aside class="drawer" id="mobile-drawer" aria-label="Mobile menu" hidden>
-    <div class="drawer-head">
-      <span class="drawer-title">Menu</span>
-      <button class="icon-btn" id="close-drawer" aria-label="Close menu" title="Close">✕</button>
-    </div>
-
-    <div class="drawer-links" id="mobile-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </aside>
-
-  <!-- HERO -->
-  <header class="hero" id="top">
-    <div class="hero-inner">
-      <p class="pill">Front-end • HTML • CSS • JavaScript</p>
-      <h1>Building clean, responsive websites that feel modern.</h1>
-      <p class="hero-sub">
-        I’m Ekbal Shah. This is a live portfolio project built with HTML, CSS, and JavaScript — including dark mode,
-        responsive navigation, and interactive UI.
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn ghost" href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section id="about" class="card">
-      <h2>👋 About Me</h2>
-      <p>
-        I’m learning and building step-by-step. I focus on clean UI, responsive layouts, and JavaScript features that
-        improve real user experience.
-      </p>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>🛠 Skills</h2>
-      <div class="chips">
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">GitHub Pages</span>
-      </div>
-      <p class="muted">
-        This website includes: dark mode (saved), sticky navbar, mobile drawer menu, scroll-to-top, and active section highlight.
-      </p>
-    </section>
-
-    <section id="projects" class="card">
-      <div class="section-head">
-        <h2>📂 Projects</h2>
-        <p class="muted">Real links, clean cards, and quick actions.</p>
+        <button
+          class="icon-btn menu-btn"
+          id="menu-btn"
+          aria-label="Open menu"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          title="Menu"
+        >
+          ☰
+        </button>
       </div>
 
-      <div class="grid">
-        <article class="project">
-          <div class="project-top">
-            <h3>Personal Website (Live)</h3>
-            <span class="tag">Responsive</span>
-          </div>
-          <p>
-            Portfolio site with dark mode, mobile navigation drawer, scroll-to-top, and section-based navbar highlight.
+      <!-- Desktop nav -->
+      <div class="nav-links" id="desktop-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer + backdrop -->
+    <div class="backdrop" id="backdrop" hidden></div>
+
+    <aside class="drawer" id="mobile-drawer" aria-label="Mobile menu" hidden>
+      <div class="drawer-head">
+        <span class="drawer-title">Menu</span>
+        <button
+          class="icon-btn"
+          id="close-drawer"
+          aria-label="Close menu"
+          title="Close"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="drawer-links" id="mobile-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </aside>
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <div class="hero-inner">
+        <p class="pill">Front-end • HTML • CSS • JavaScript</p>
+        <h1>Building clean, responsive websites that feel modern.</h1>
+        <p class="hero-sub">
+          I’m Ekbal Shah. This is a live portfolio project built with HTML, CSS,
+          and JavaScript — including dark mode, responsive navigation, and
+          interactive UI.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card">
+        <h2>👋 About Me</h2>
+        <p>
+          I’m learning and building step-by-step. I focus on clean UI,
+          responsive layouts, and JavaScript features that improve real user
+          experience.
+        </p>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>🛠 Skills</h2>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+        <p class="muted">
+          This website includes: dark mode (saved), sticky navbar, mobile drawer
+          menu, scroll-to-top, and active section highlight.
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <div class="section-head">
+          <h2>📂 Projects</h2>
+          <p class="muted">Real links, clean cards, and quick actions.</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="project-top">
+              <h3>Personal Website (Live)</h3>
+              <span class="tag">Responsive</span>
+            </div>
+            <p>
+              Portfolio site with dark mode, mobile navigation drawer,
+              scroll-to-top, and section-based navbar highlight.
+            </p>
+            <div class="project-actions">
+              <a
+                class="btn small primary"
+                href="https://ekbalshah-dev.github.io/personal-portfolio-website/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live</a
+              >
+              <a
+                class="btn small ghost"
+                href="https://github.com/ekbalshah-dev/personal-portfolio-website.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <h3>HTML/CSS Practice</h3>
+              <span class="tag">Basics</span>
+            </div>
+            <p>
+              Practice project focused on layout, spacing, typography, and
+              deployment workflow using GitHub Pages.
+            </p>
+            <div class="project-actions">
+              <a
+                class="btn small ghost"
+                href="https://github.com/ekbal786-development/my-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View</a
+              >
+            </div>
+          </article>
+
+          <!-- Add more project cards later -->
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <div class="section-head">
+          <h2>📩 Contact</h2>
+          <p class="muted">
+            This form shows on-page feedback using JavaScript.
           </p>
-          <div class="project-actions">
-            <a class="btn small primary" href="https://ekbal786-development.github.io/my-website/" target="_blank" rel="noopener noreferrer">Live</a>
-            <a class="btn small ghost" href="https://github.com/ekbal786-development/my-website" target="_blank" rel="noopener noreferrer">Code</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-top">
-            <h3>HTML/CSS Practice</h3>
-            <span class="tag">Basics</span>
-          </div>
-          <p>
-            Practice project focused on layout, spacing, typography, and deployment workflow using GitHub Pages.
-          </p>
-          <div class="project-actions">
-            <a class="btn small ghost" href="https://github.com/ekbal786-development/my-website" target="_blank" rel="noopener noreferrer">View</a>
-          </div>
-        </article>
-
-        <!-- Add more project cards later -->
-      </div>
-    </section>
-
-    <section id="contact" class="card">
-      <div class="section-head">
-        <h2>📩 Contact</h2>
-        <p class="muted">This form shows on-page feedback using JavaScript.</p>
-      </div>
-
-      <form id="contact-form" class="form">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required />
         </div>
 
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required />
-        </div>
+        <form id="contact-form" class="form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
 
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-        </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
 
-        <button type="submit" class="btn primary">Send Message</button>
-        <p id="form-message" class="form-msg" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
 
-  <footer class="footer">
-    <p>© 2025 Ekbal Shah • Built with HTML, CSS & JavaScript</p>
-  </footer>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p
+            id="form-message"
+            class="form-msg"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
 
-  <button id="scrollTopBtn" class="scrolltop" aria-label="Scroll to top" title="Go to top">⬆</button>
+    <footer class="footer">
+      <p>© 2025 Ekbal Shah • Built with HTML, CSS & JavaScript</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <button
+      id="scrollTopBtn"
+      class="scrolltop"
+      aria-label="Scroll to top"
+      title="Go to top"
+    >
+      ⬆
+    </button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
