@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch((error) => {
           message.textContent =
-            "Something wesnt wrong. Please try again later.";
+            "Something went wrong. Please try again later.";
           message.style.color = "crimson";
           console.error("Error:", error);
         });
