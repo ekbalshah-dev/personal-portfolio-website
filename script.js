@@ -42,10 +42,35 @@ document.addEventListener("DOMContentLoaded", () => {
         message.style.color = "crimson";
         return;
       }
+      // Prepare form data
+      const data =
+        "name=" +
+        encodeURIComponent(name) +
+        "&email=" +
+        encodeURIComponent(email) +
+        "&message=" +
+        encodeURIComponent(msg);
 
-      message.textContent = "Thanks! Your message is ready (demo form).";
-      message.style.color = "seagreen";
-      form.reset();
+      // Send data to Java backend
+      fetch("http://localhost:8080/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: data,
+      })
+        .then((response) => response.text())
+        .then((result) => {
+          message.textContent = result;
+          message.style.color = "seagreen";
+          form.reset();
+        })
+        .catch((error) => {
+          message.textContent =
+            "Something wesnt wrong. Please try again later.";
+          message.style.color = "crimson";
+          console.error("Error:", error);
+        });
     });
   }
 
