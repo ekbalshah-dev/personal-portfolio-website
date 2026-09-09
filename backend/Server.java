@@ -15,7 +15,8 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
 
-        int port = Integer.parseInt(System.getenv("PORT", "8080"));
+        String portEnv = System.getenv("PORT");
+        int port = portEnv != null ? Integer.parseInt(portEnv) : 8080;
 
         HttpServer server = HttpServer.create(
             new InetSocketAddress(port),
