@@ -100,15 +100,22 @@ for (String field : fields) {
 System.out.println("Name: " + name);
 System.out.println("Email: " + email);
 System.out.println("Message: " + msg);
-sendEmail(name, email, msg);
+String response;
 
-        String response = "Data received successfully!";
+try {
+    sendEmail(name, email, msg);
+    response = "Message sent successfully!";
+} catch (Exception e) {
+    System.out.println("Error processing contact request:");
+    e.printStackTrace();
+    response = "Unable to send message. Please try again later.";
+}
 
-        exchange.sendResponseHeaders(200, response.length());
+byte[] responseBytes = response.getBytes(StandardCharsets.UTF_8);
 
-        exchange.getResponseBody().write(response.getBytes());
-
-        exchange.getResponseBody().close();
+exchange.sendResponseHeaders(200, responseBytes.length);
+exchange.getResponseBody().write(responseBytes);
+exchange.getResponseBody().close();
 
     } else {
 
