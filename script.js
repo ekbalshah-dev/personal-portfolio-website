@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         encodeURIComponent(msg);
 
       // Send data to Java backend
-      fetch("http://localhost:8080/contact", {
+      fetch("/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -66,8 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
           form.reset();
         })
         .catch((error) => {
-          message.textContent =
-            "Something went wrong. Please try again later.";
+          message.textContent = "Something went wrong. Please try again later.";
           message.style.color = "crimson";
           console.error("Error:", error);
         });
